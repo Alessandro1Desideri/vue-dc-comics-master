@@ -1,0 +1,62 @@
+@import '@/style/variables.scss';
+
+.header{
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1200px;
+        margin: 0 auto;
+        height: 75px;
+        
+        .header-logo{
+            img{
+                width: 65px;
+            }
+        }
+
+        .header-text{
+            display: flex;
+            text-transform: uppercase;
+
+            > div{
+                height: 75px;
+                padding: 0 15px;
+                line-height: 75px;
+                border-bottom: 4px solid transparent;
+
+                &:hover{
+                    border-bottom: 4px solid $hoverColor;
+                    cursor: pointer;
+                }
+
+                a{
+                    color: transparent;
+                    height: 75px;
+                    text-decoration: none;
+                    color: #333;
+
+                    &:hover{
+                        color: $hoverColor;
+                        text-decoration: none;
+                    }
+    
+                    span{
+                        font-size: 12px;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+            }
+    
+            
+        }
+
+    }
+
+    .jumbotron{
+        background: url(../assets/jumbotron.jpg);
+        height: 450px;
+    }
+}
